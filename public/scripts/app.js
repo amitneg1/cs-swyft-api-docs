@@ -1,4 +1,4 @@
-var app = angular.module("swyftDoc", ['ui.router', 'swyftDoc.external']);
+var app = angular.module("swyftDoc", ['ui.router', 'ui.bootstrap', 'swyftDoc.external']);
 
 app.config(['$locationProvider', '$httpProvider', '$stateProvider', '$urlRouterProvider', function($locationProvider, $httpProvider, $stateProvider, $urlRouterProvider){
 	$locationProvider.html5Mode({
