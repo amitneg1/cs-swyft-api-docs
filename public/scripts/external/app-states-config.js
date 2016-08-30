@@ -12,13 +12,11 @@ app.config(['$locationProvider', '$httpProvider', '$stateProvider', '$urlRouterP
 		.state('external-docs.overview', {
 			url : '/overview',
 			templateUrl : 'partials/external/overview.html',
-			controller : "overviewController"
+			controller : "overviewController",
+			data : {
+				"requireLogin" : true
+			}
 		})
-		// .state('external-docs.guide', {
-		// 	url : '/guide',
-		// 	templateUrl : 'partials/external/guide.html',
-		// 	controller : "guideController"
-		// })
 		.state('external-docs.apiDocs', {
 			url : '/docs',
 			templateUrl : 'partials/external/apiDocs.html',
@@ -30,6 +28,9 @@ app.config(['$locationProvider', '$httpProvider', '$stateProvider', '$urlRouterP
 						return true;
 					})
 				}
+			},
+			data : {
+				"requireLogin" : true
 			}
 		})
 }]);

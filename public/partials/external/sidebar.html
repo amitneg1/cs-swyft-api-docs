@@ -29,7 +29,7 @@
       </div>
 
       <div class="panel-item">
-          <b><a ui-sref="login">Logout</a></b>
+          <b><a ng-click="logout()">Logout</a></b>
       </div>
 
   </div>
@@ -48,29 +48,41 @@
             <div class="heading-toc">Overview of Swyft API</div>
             <ul class="list-toc">
                 <li class="item-toc">
-                  <a href="#what-is-swyft-api" class="sidebar-link">
+                  <a href="#what-is-swyft-api" id="what-is-swyft-api" class="sidebar-link">
                     <span>What is Swyft API</span>
                   </a>
                 </li>
                 <li class="item-toc">
-                  <a href="#help" class="sidebar-link">
+                  <a href="#help" class="sidebar-link" id="help">
                     <span>Help with Swyft API</span>
                   </a>
                 </li>
             </ul>
         </li>
     </ul>
+
+    <ul class="toc" ng-if="pageInfo === 'docs'">
+        <li>
+            <div class="heading-toc">Swyft API Reference</div>
+            <ul class="list-toc">
+                <li class="item-toc">
+                  <a href="#what-is-swyft-api" id="what-is-swyft-api" class="sidebar-link">
+                    <span>What is Swyft API</span>
+                  </a>
+                </li>
+                <li class="item-toc">
+                  <a href="#help" class="sidebar-link" id="help">
+                    <span>Help with Swyft API</span>
+                  </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
   </div>
 </div>
 
 <div class="nav dark">
-<!--   <div class="nav-group">
-    <div class="nav-item">
-      <span class="js-sidebar-toggle">
-        <span class="icon-menu"></span>
-      </span>
-    </div>
-  </div> -->
 
   <div class="center-wrapper">
     <img src="../../images/swyft.png" alt="Swyft API Docs"/>

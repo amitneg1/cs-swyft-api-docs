@@ -1,6 +1,6 @@
 var app = angular.module('swyftDoc');
 
-app.controller("externalDocsController", ['$scope', '$uibModal', function($scope, $uibModal){
+app.controller("externalDocsController", ['$scope', '$uibModal', '$state', function($scope, $uibModal, $state){
 	console.log("Inside externalDocsController function");
 	$scope.openSearchForm = function(event){
 		event.preventDefault();
@@ -12,4 +12,11 @@ app.controller("externalDocsController", ['$scope', '$uibModal', function($scope
 	      controller: 'searchModalController'
 	    });
 	}
+
+	$scope.logout = function(){
+		console.log("Logging you out");
+		localStorage.clear();
+		$state.go('login');
+	}
+
 }])
