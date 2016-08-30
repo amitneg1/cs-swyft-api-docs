@@ -3970,3 +3970,11 @@ body.sidebar-visible .content {
   -ms-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
 }
+
+.search-bar{
+  border : 1px solid gray;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
