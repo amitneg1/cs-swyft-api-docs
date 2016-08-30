@@ -1,6 +1,6 @@
 var app = angular.module('swyftDoc');
 
-app.controller("loginModalController", ['$scope', '$uibModalInstance', function($scope, $uibModalInstance){
+app.controller("loginModalController", ['$scope', '$uibModalInstance', '$state', function($scope, $uibModalInstance, $state){
 	console.log("Inside loginModalController function");
 	$scope.user = {};
 	$scope.cancel = function () {

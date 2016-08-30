@@ -1,6 +1,7 @@
 var app = angular.module('swyftDoc');
 
 app.controller("apiDocsController", ['$scope', '$rootScope', function($scope, $rootScope){
+	$rootScope.pageInfo = 'docs';
 	$scope.apis = $rootScope.swaggerData["paths"];
 	$scope.pathParams = true;
 	$scope.bodyParams = true;
@@ -19,5 +20,7 @@ app.controller("apiDocsController", ['$scope', '$rootScope', function($scope, $r
 			$scope.apis[key]["requires_authentication"] = true;
 		}
 	}
+
+	$rootScope.swaggerData["paths"] = $scope.apis;
 
 }])

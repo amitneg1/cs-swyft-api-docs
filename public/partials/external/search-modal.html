@@ -3,6 +3,8 @@
 <input type="text" placeholder="Search..." ng-model="queryText">
 <button ng-click="clearSearch()">X</button>
 
-<div ng-repeat="result in resultsList">
-	
+<div ng-repeat="(key, value) in resultsList" ng-click="showSearchedAPI(key, value)">
+	<span ng-bind="value.http_method | uppercase"></span>
+	<span ng-bind="value.tags[0] | titlecase"></span>
+	<span ng-bind="value.summary"></span>
 </div>
