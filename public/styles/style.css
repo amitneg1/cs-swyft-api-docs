@@ -3966,6 +3966,7 @@ body.sidebar-visible .content {
   transform: scale3d(1, 1, 1);
 }
 
+<<<<<<< HEAD
 .form-sign-in .form-group {
   margin: 5px 0 20px;
 }
@@ -4220,4 +4221,11 @@ body.sidebar-visible .content {
   .modal-lg {
     width: 900px;
   }
+
+.search-bar{
+  border : 1px solid gray;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0px 10px;
+  cursor: pointer;
 }

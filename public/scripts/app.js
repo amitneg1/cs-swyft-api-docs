@@ -13,3 +13,7 @@ app.config(['$locationProvider', '$httpProvider', '$stateProvider', '$urlRouterP
 			controller : 'loginController'
 		})
 }]);
+
+app.run(['$rootScope', function($rootScope){
+
+}])
