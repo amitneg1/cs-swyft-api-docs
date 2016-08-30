@@ -1,2 +1,8 @@
-<h1>This is search modal</h1>
-<h1 ng-bind="msg"></h1>
+<button ng-click="cancel()">Close search</button>
+
+<input type="text" placeholder="Search..." ng-model="queryText">
+<button ng-click="clearSearch()">X</button>
+
+<div ng-repeat="result in resultsList">
+	
+</div>
