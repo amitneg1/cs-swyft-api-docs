@@ -1,8 +1,9 @@
-<div class="modal-header">
-    <h3 class="modal-title" id="modal-title">Login</h3>
+<div class="modal-header form-sign-in-header">
+    <!-- <h3 class="modal-title" id="modal-title">Sign In</h3> -->
+      <img src="../../images/nav-logo.png">
 </div>
 <div class="modal-body" id="modal-body">
-    <form ng-submit="login()">
+    <form class="form-sign-in" ng-submit="login()">
       <div class="form-group">
         <label for="username">Username</label>
         <input type="text" class="form-control" id="username" ng-model="user.username">
